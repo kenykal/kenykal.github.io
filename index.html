@@ -780,7 +780,7 @@
                   </div>
                   <div>
                     <p class="text-xs text-slate-400">E-mail Direto</p>
-                    <p class="text-sm font-semibold text-white">kenycrkal@gmail.com</p>
+                    <p class="text-sm font-semibold text-white">kenycrk@gmail.com</p>
                   </div>
                 </div>
                 <span class="text-xs font-mono text-cyan-400 px-2.5 py-1 rounded-lg bg-cyan-500/10">Copiar</span>
@@ -929,7 +929,7 @@
 
     // Copy Email Function with Visual Feedback
     function copyEmail() {
-      const email = 'kenycrkal@gmail.com';
+      const email = 'kenycrk@gmail.com';
       const copied = copyTextToClipboard(email);
 
       const icon = document.getElementById('copy-email-icon');
@@ -944,9 +944,9 @@
             text.textContent = 'Copiar E-mail';
           }, 2500);
         }
-        showToast('E-mail copiado!', 'kenycrkal@gmail.com copiado para a área de transferência.');
+        showToast('E-mail copiado!', 'kenycrk@gmail.com copiado para a área de transferência.');
       } else {
-        showToast('E-mail: kenycrkal@gmail.com', 'Selecione e copie o endereço de e-mail.', 'fa-envelope');
+        showToast('E-mail: kenycrk@gmail.com', 'Selecione e copie o endereço de e-mail.', 'fa-envelope');
       }
     }
 
@@ -993,7 +993,7 @@
 
       const fullSubject = encodeURIComponent(`[Portfólio] ${subject} - ${name}`);
       const fullBody = encodeURIComponent(`Olá Keny,\n\nNome/Empresa: ${name}\n\n${message}`);
-      window.location.href = `mailto:kenycrkal@gmail.com?subject=${fullSubject}&body=${fullBody}`;
+      window.location.href = `mailto:kenycrk@gmail.com?subject=${fullSubject}&body=${fullBody}`;
 
       showToast('Abrindo cliente de e-mail', 'Sua mensagem foi preparada para envio.', 'fa-paper-plane');
     });
@@ -1004,7 +1004,7 @@
       const subject = document.getElementById('sender-subject').value.trim() || 'Contato via Portfólio';
       const message = document.getElementById('sender-message').value.trim() || 'Olá Keny, gostaríamos de conversar sobre uma oportunidade na área de TI.';
 
-      const formatted = `Para: kenycrkal@gmail.com\nAssunto: ${subject} (${name})\n\n${message}`;
+      const formatted = `Para: kenycrk@gmail.com\nAssunto: ${subject} (${name})\n\n${message}`;
       if (copyTextToClipboard(formatted)) {
         showToast('Mensagem copiada!', 'Cole diretamente no seu e-mail ou LinkedIn.', 'fa-check');
       }
